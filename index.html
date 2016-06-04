@@ -1,0 +1,59 @@
+<DOCTYPE html>
+  <html>
+  <meta charset="utf-8">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Web-Bluetooth - Battery Service Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body class="loading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 text-center">
+          <h4 class="title">Web-Bluetooth - Battery Service Demo</h4>
+          <p class="subtitle">Connect to a device via its name or name prefix.</p>
+          <div class="form-inline">
+            <input type="text" class="form-control" id="nameFilter" placeholder="name">
+            <input type="text" class="form-control" id="prefixFilter" placeholder="namePrefix">
+          </div>
+          <div class="buttons">
+            <button class="btn connect" id="connect">Connect</button>
+            <button class="btn getvalue" id="getvalue">Get Battery Level</button>
+            <button class="btn disconnect" id="disconnect">Disconnect</button>
+          </div>
+          <h5 id="status"></h5>
+          <h5 id="status-level">Battery Level: <span id="level"></span></h5>
+          <div id="load">
+            <div class="spinner"></div>
+            <p>Connecting...</p>
+            <a href="">
+              <p id="cancel">Cancel</p>
+            </a>
+          </div>
+          <div id="battery-parent">
+            <div id="battery-shell">
+              <img id="charge" src="assets/charge.svg">
+              <div id="battery-fill">
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <p>For more information, visit <a href="http://sabertooth-io.github.io/">sabertooth-io.github.io</a></p>
+            <p><a href="">View demo on GitHub</a></p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="./build/bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+  </body>
+
+  </html>
