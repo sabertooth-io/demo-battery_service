@@ -32,4 +32,4 @@ This demo uses four of the many methods in the [web-bluetooth](http://sabertooth
 ##### `disconnect()`
 ##### `getValue()`
 
-For more information, visit the web[web-bluetooth](http://sabertooth-io.github.io/) docs.
+For more information, visit the [web-bluetooth](http://sabertooth-io.github.io/) docs.
